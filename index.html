@@ -1,166 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Google Clone</title>
-        <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Gmail</a></li>
-        <li><a href="#">Images</a></li>
-        <li><button aria-label="Google Apps">&#x2630;</button></li>
-        <li><button>Sign In</button></li>
-      </ul>
-    </nav>
-  </header>
-
-<main>
-  <img src="google-logo.png" alt="Google Logo" class="logo" />
-    <form class="search-form">
-      <input type="text" aria-label="Search" />
-        <div class="buttons">
-          <button type="submit">Google Search</button>
-          <button type="button">I'm Feeling Lucky</button>
-        </div>
-    </form>
-</main>
-
-  <footer>
-    <p>© 2025 Google</p>
-      <nav>
-        <ul>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-           <li><a href="#">Settings</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
-</html>* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
-body {
-font-family: Arial, sans-serif;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-}
-
-/* Header styles */
-header nav ul {
-display: flex;
-justify-content: flex-end;
-list-style: none;
-padding: 1rem 2rem;
-gap: 1.5rem;
-}
-header nav ul li a,
-header nav ul li button {
-color: #5f6368;
-text-decoration: none;
-background: none;
-border: none;
-cursor: pointer;
-font-size: 0.9rem;
-}
-header nav ul li button:hover,
-header nav ul li a:hover {
-text-decoration: underline;
-}
-
-/* Main section */
-main {
-flex: 1;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 2rem;
-}
-.logo {
-width: 272px;
-margin-bottom: 20px;
-}
-.search-form {
-width: 100%;
-max-width: 600px;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.search-form input[type="text"] {
-width: 100%;
-padding: 10px 15px;
-font-size: 1.1rem;
-border: 1px solid #dfe1e5;
-border-radius: 24px;
-outline: none;
-box-shadow: none;
-transition: box-shadow 0.3s ease;
-}
-.search-form input[type="text"]:focus {
-box-shadow: 0 0 5px rgba(66, 133, 244, 0.6);
-border-color: #4285f4;
-}
-.buttons {
-margin-top: 20px;
-display: flex;
-gap: 10px;
-}
-.buttons button {
-background-color: #f8f9fa;
-border: 1px solid #f8f9fa;
-border-radius: 4px;
-padding: 10px 20px;
-font-size: 0.9rem;
-cursor: pointer;
-color: #3c4043;
-transition: box-shadow 0.2s ease;
-}
-.buttons button:hover {
-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-border-color: #c6c6c6;
-}
-
-/* Footer styles */
-footer {
-background-color: #f2f2f2;
-padding: 1rem 2rem;
-font-size: 0.8rem;
-color: #70757a;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-footer nav ul {
-list-style: none;
-display: flex;
-gap: 1rem;
-}
-footer nav ul li a {
-color: #70757a;
-text-decoration: none;
-}
-footer nav ul li a:hover {
-text-decoration: underline;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-header nav ul {
-justify-content: center;
-}
-.buttons {
-flex-direction: column;
-}
-.buttons button {
-width: 100%;
-}
-}
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+		<title>Google</title>
+	</head>
+	<body>
+		<header>
+			<a href="https://plus.google.com/u/0/up/follow">+Lara</a>
+			<a href="https://mail.google.com">Gmail</a>
+			<a href="https://www.google.com/imghp?hl=en&tab=wi&ei=Ox1NVMXuJYO3yATCjoFA&ved=0CAQQqi4oAg">Images</a>
+			<img id="products" src="products.png"/>
+			<img id="bell" src="bell.png"/>
+			<img id="share" src="share.png"/>
+			<img id="lara" class="headerpics" src="http://lh3.googleusercontent.com/-zkPWifjxy1M/AAAAAAAAAAI/AAAAAAAAAAA/7pAALFnncq4/s32-c/photo.jpg"/>
+		</header>
+		<div>
+			<img src="https://www.google.com/images/srpr/logo11w.png"/>
+			<form name="google" action="#" method="POST"><br>
+				<input type="search" class="search"><br>
+				<input type="submit" class="button" name="submit" value="Google Search">
+				<input type="submit" class="button" name="lucky" value="I'm Feeling Lucky">
+			</form>
+		</div>
+		<footer>
+			<a class="leftlinks" href="https://www.google.com/intl/en/ads/?fg=1">Advertising</a>
+			<a class="leftlinks" href="https://www.google.com/services/?fg=1">Business</a>
+			<a class="leftlinks" href="https://www.google.com/intl/en/about/">About</a>
+			<a class="rightlinks" href="https://www.google.com/preferences?hl=en">Settings</a>
+			<a class="rightlinks" href="https://www.google.com/intl/en/policies/?fg=1">Privacy & Terms</a>
+		</footer>
+	</body>
+</html>
