@@ -1,134 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Google Clone</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-    }
-
-    /* Header */
-    .header {
-      display: flex;
-      justify-content: flex-end;
-      padding: 15px 25px;
-      gap: 20px;
-    }
-
-    .header a {
-      text-decoration: none;
-      color: black;
-      font-size: 14px;
-    }
-
-    /* Main Section */
-    .main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /* Google Logo */
-    .logo {
-      font-size: 80px;
-      font-weight: bold;
-    }
-
-    .blue { color: #4285F4; }
-    .red { color: #EA4335; }
-    .yellow { color: #FBBC05; }
-    .green { color: #34A853; }
-
-    /* Search Box */
-    .search-box {
-      margin-top: 20px;
-    }
-
-    .search-box input {
-      width: 500px;
-      padding: 12px 20px;
-      border: 1px solid #ccc;
-      border-radius: 25px;
-      outline: none;
-      font-size: 16px;
-    }
-
-    /* Buttons */
-    .buttons {
-      margin-top: 20px;
-    }
-
-    .buttons button {
-      padding: 10px 20px;
-      margin: 5px;
-      border: none;
-      background: #f2f2f2;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-
-    .buttons button:hover {
-      border: 1px solid #ccc;
-    }
-
-    /* Footer */
-    .footer {
-      background: #f2f2f2;
-      padding: 15px;
-      text-align: center;
-      font-size: 14px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <nav>
+            <a href="https://mail.google.com">Gmail</a>
+            <a href="https://www.google.com/imghp">Images</a>
+            <button class="sign-in-btn">Sign in</button>
+        </nav>
+    </header>
 
-  <!-- Header -->
-  <div class="header">
-    <a href="#">Gmail</a>
-    <a href="#">Images</a>
-  </div>
+    <main>
+        <img src="https://google.com" alt="Google Logo">
+        <form action="https://google.com" method="GET">
+            <div class="search-box">
+                <input type="text" name="q" class="search-input">
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Google Search">
+                <input type="submit" value="I'm Feeling Lucky">
+            </div>
+        </form>
+    </main>
 
-  <!-- Main -->
-  <div class="main">
+    <footer>
+        <div class="left-links">
+            <a href="#">About</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+        </div>
+        <div class="right-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+        </div>
+    </footer>
 
-    <!-- Logo -->
-    <div class="logo">
-      <span class="blue">G</span>
-      <span class="red">o</span>
-      <span class="yellow">o</span>
-      <span class="blue">g</span>
-      <span class="green">l</span>
-      <span class="red">e</span>
-    </div>
-
-    <!-- Search -->
-    <div class="search-box">
-      <input type="text" placeholder="Search Google or type a URL">
-    </div>
-
-    <!-- Buttons -->
-    <div class="buttons">
-      <button>Google Search</button>
-      <button>I'm Feeling Lucky</button>
-    </div>
-
-  </div>
-
-  <!-- Footer -->
-  <div class="footer">
-    Google Homepage
-  </div>
-	<script type='text/javascript'>
+    <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
@@ -147,7 +59,6 @@
 	};
 </script>
 <script type='text/javascript' src='https://orgfarm-778e3384b3-dev-ed.develop.my.site.com/ESWgithubMessagingSetti1779873658641/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
 
 </body>
 </html>
